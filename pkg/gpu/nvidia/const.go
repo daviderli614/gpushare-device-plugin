@@ -8,27 +8,20 @@ import (
 type MemoryUnit string
 
 const (
-	resourceName  = "aliyun.com/gpu-mem"
-	resourceCount = "aliyun.com/gpu-count"
-	serverSock    = pluginapi.DevicePluginPath + "aliyungpushare.sock"
+	resourceName  = "ucloud.cn/gpu-mem"
+	resourceCount = "ucloud.cn/gpu-count"
+	serverSock    = pluginapi.DevicePluginPath + "ucloudshare.sock"
 
 	OptimisticLockErrorMsg = "the object has been modified; please apply your changes to the latest version and try again"
 
-	allHealthChecks             = "xids"
-	containerTypeLabelKey       = "io.kubernetes.docker.type"
-	containerTypeLabelSandbox   = "podsandbox"
-	containerTypeLabelContainer = "container"
-	containerLogPathLabelKey    = "io.kubernetes.container.logpath"
-	sandboxIDLabelKey           = "io.kubernetes.sandbox.id"
-
 	envNVGPU                   = "NVIDIA_VISIBLE_DEVICES"
-	EnvResourceIndex           = "ALIYUN_COM_GPU_MEM_IDX"
-	EnvResourceByPod           = "ALIYUN_COM_GPU_MEM_POD"
-	EnvResourceByContainer     = "ALIYUN_COM_GPU_MEM_CONTAINER"
-	EnvResourceByDev           = "ALIYUN_COM_GPU_MEM_DEV"
-	EnvAssignedFlag            = "ALIYUN_COM_GPU_MEM_ASSIGNED"
-	EnvResourceAssumeTime      = "ALIYUN_COM_GPU_MEM_ASSUME_TIME"
-	EnvResourceAssignTime      = "ALIYUN_COM_GPU_MEM_ASSIGN_TIME"
+	EnvResourceIndex           = "UCLOUD_CN_GPU_MEM_IDX"
+	EnvResourceByPod           = "UCLOUD_CN_GPU_MEM_POD"
+	EnvResourceByContainer     = "UCLOUD_CN_GPU_MEM_CONTAINER"
+	EnvResourceByDev           = "UCLOUD_CN_GPU_MEM_DEV"
+	EnvAssignedFlag            = "UCLOUD_CN_GPU_MEM_ASSIGNED"
+	EnvResourceAssumeTime      = "UCLOUD_CN_GPU_MEM_ASSUME_TIME"
+	EnvResourceAssignTime      = "UCLOUD_CN_GPU_MEM_ASSIGN_TIME"
 	EnvNodeLabelForDisableCGPU = "cgpu.disable.isolation"
 
 	GiBPrefix = MemoryUnit("GiB")
